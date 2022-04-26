@@ -11,12 +11,12 @@ function App() {
   const [currentScore, setCurrentScore] = useState(0);
   const [clicked, setClicked] = useState (false);
 
-  handleClick = id => {
+  const handleClick = id => {
     shuffleArray();
     handleScore(id);
   }
 
-  handleScore = id => {
+  const handleScore = id => {
     planets.forEach(element => {
       if(id === element.id && element.clicked === false) {
         element.clicked = true;
@@ -32,20 +32,19 @@ function App() {
         planets.forEach(element => (element.clicked = false));
         console.log(planets);
       }
-      }
     });
   };
 
-  shuffleArray = () => {
+  const shuffleArray = () => {
     const shuffledArr = shuffle(planets);
-    setCharacters({shuffledArr});
+    setPlanets({shuffledArr});
   }
 
-  handleIncrement = () => {
+  const handleIncrement = () => {
     setCurrentScore(currentScore ++);
   }
 
-  shuffle = array => {
+  const shuffle = array => {
     let currentIndex = array.length,
       temporaryValue,
       randomIndex;
