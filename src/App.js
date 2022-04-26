@@ -1,11 +1,13 @@
 import React from "react";
 import './App.css';
 import { useState } from "react";
+import PlanetCard from "./components/PlanetCard";
+import Header from "./components/Header";
 
 function App() {
 
   const [planets, setPlanets] = useState("");
-  const [highscore, setHighscore] = useState(0);
+  const [highScore, setHighScore] = useState(0);
   const [currentScore, setCurrentScore] = useState(0);
   const [clicked, setClicked] = useState (false);
 
@@ -23,7 +25,7 @@ function App() {
       }
       else if (id === element.id && element.clicked === true) {
         if(currentScore > highScore) {
-          setHighscore(currentScore);
+          setHighScore(currentScore);
         }
         setCurrentScore(0);
         setClicked(true);
@@ -61,7 +63,21 @@ function App() {
   }
 
   return (
-    
+    <div>
+      <Header currentScore={currentScore} highScore={highScore} />
+      {planets.map((planet) => {
+        return (
+          <PlanetCard
+            Clicked={clicked}
+            handleClick={handleClick}
+            id={planet.id}
+            key={planet.id}
+            name={planet.name}
+            image={planet.image}
+          />
+        )
+      })}
+    </div>
   )
 
 }
