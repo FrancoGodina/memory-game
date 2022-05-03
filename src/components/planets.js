@@ -1,4 +1,4 @@
-[
+let planets = [
     {
         "id": 1,
         "clicked": false,
@@ -10,7 +10,7 @@
         "id": 2,
         "clicked": false,
         "name": "Venus",
-        "image": "https://s2.best-wallpaper.net/wallpaper/2560x1440/1803/Venus-Solar-System-planet-space_2560x1440.jpg"
+        "image": ""
     },
 
     {
@@ -55,3 +55,5 @@
         "image": "https://wallpaperaccess.com/full/1661562.jpg"
     }
 ]
+
+export default planets;
