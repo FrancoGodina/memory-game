@@ -6,7 +6,9 @@ function PlanetCard(props) {
             <div className="img-container">
                 <img alt={props.name} src={props.image}/>
             </div>
-            {props.name}
+            <div className="img-name">
+                {props.name}
+            </div>
         </div>
     )
 }

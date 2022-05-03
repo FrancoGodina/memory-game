@@ -3,42 +3,42 @@ let planets = [
         "id": 1,
         "clicked": false,
         "name": "Mercury",
-        "image": "https://wallpaperaccess.com/full/2920191.jpg"
+        "image": "https://cdn.mos.cms.futurecdn.net/xLXT69hv4k2U5pfKLBCanC-970-80.jpg"
     },
 
     {
         "id": 2,
         "clicked": false,
         "name": "Venus",
-        "image": ""
+        "image": "https://solarsystem.nasa.gov/system/feature_items/images/143_Venus-800x600.jpg"
     },
 
     {
         "id": 3,
         "clicked": false,
         "name": "Earth",
-        "image": "https://images.pexels.com/photos/87651/earth-blue-planet-globe-planet-87651.jpeg?cs=srgb&dl=pexels-pixabay-87651.jpg&fm=jpg"
+        "image": "https://wallpaperaccess.com/full/19602.jpg"
     },
 
     {
         "id": 4,
         "clicked": false,
         "name": "Mars",
-        "image": "https://i.pinimg.com/originals/e8/9d/93/e89d93e9f3bd02f1603ab26231a94d2d.jpg"
+        "image": "https://images.alphacoders.com/540/540072.jpg"
     },
 
     {
         "id": 5,
         "clicked": false,
         "name": "Jupiter",
-        "image": "https://svs.gsfc.nasa.gov/vis/a010000/a012000/a012021/JupiterThumbnailSmall.png"
+        "image": "https://images6.alphacoders.com/878/thumb-1920-878584.jpg"
     },
 
     {
         "id": 6,
         "clicked": false,
         "name": "Saturn",
-        "image": "https://solarsystem.nasa.gov/internal_resources/147"
+        "image": "https://wallpaperaccess.com/full/160366.jpg"
     },
 
     {
